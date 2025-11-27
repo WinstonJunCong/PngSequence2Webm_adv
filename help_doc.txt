@@ -1,0 +1,432 @@
+
+L:\Temp\Shaun\ForRusydi>set MAYA_RENDER_DESC_PATH=C:/Tools/maya/2022/modules/mtoadeploy5.1.1.0/2022
+
+L:\Temp\Shaun\ForRusydi>"C:/Program Files/Autodesk/Maya2022/bin/mayabatch.exe" -batch -proj "L:/Temp/Shaun/ForRusydi" -file "L:/Temp/Shaun/ForRusydi/DRG_FE_Action_Intro_LIT.mb" -command "python(\"import maya.cmds as cmds; cmds.loadPlugin('mtoa'); cmds.setAttr('defaultRenderGlobals.startFrame', 0); cmds.setAttr('defaultRenderGlobals.endFrame', 95); cmds.setAttr('defaultRenderGlobals.animation', 1); cmds.arnoldRender(seq=True, startFrame=0, endFrame=95)\")"
+This plugin does not support createPlatformOpenGLContext!
+Initialized VP2.0 renderer {
+  Version : 2016.11.62.12. Feature Level 5.
+  Adapter : NVIDIA GeForce RTX 3060/PCIe/SSE2
+  Vendor ID: 4318. Device ID : 9476
+  Driver : .
+  API : OpenGL V.4.6.
+  Max texture size : 16384 * 16384.
+  Max texture coords : 32
+  Shader versions supported (Vertex: 5, Geometry: 5, Pixel 5).
+  Shader compiler profile : (Best card profile)
+  Active stereo support available : 0
+  GPU Memory Limit : 12288 MB.
+  CPU Memory Limit : 61963.5 MB.
+  MultiDraw consolidation : enabled
+}
+OpenCL evaluator is attempting to initialize OpenCL.
+Detected 2 OpenCL Platforms:
+ 0: NVIDIA Corporation. NVIDIA CUDA. OpenCL 3.0 CUDA 12.9.76.
+ Supported extensions: cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_fp64 cl_khr_3d_image_writes cl_khr_byte_addressable_store cl_khr_icd cl_khr_gl_sharing cl_nv_compiler_options cl_nv_device_attribute_query cl_nv_pragma_unroll cl_nv_d3d10_sharing cl_khr_d3d10_sharing cl_nv_d3d11_sharing cl_nv_copy_opts cl_nv_create_buffer cl_khr_int64_base_atomics cl_khr_int64_extended_atomics cl_khr_device_uuid cl_khr_pci_bus_info cl_khr_external_semaphore cl_khr_external_memory cl_khr_external_semaphore_win32 cl_khr_external_memory_win32 cl_khr_semaphore
+ Selected matching OpenCL Platform: NVIDIA Corporation NVIDIA CUDA OpenCL 3.0 CUDA 12.9.76.
+ 1: Intel(R) Corporation. Intel(R) OpenCL Graphics. OpenCL 3.0 .
+ Supported extensions: cl_khr_byte_addressable_store cl_khr_device_uuid cl_khr_fp16 cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_icd cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_intel_command_queue_families cl_intel_subgroups cl_intel_required_subgroup_size cl_intel_subgroups_short cl_khr_spir cl_intel_accelerator cl_intel_driver_diagnostics cl_khr_priority_hints cl_khr_throttle_hints cl_khr_create_command_queue cl_intel_subgroups_char cl_intel_subgroups_long cl_khr_il_program cl_intel_mem_force_host_memory cl_khr_subgroup_extended_types cl_khr_subgroup_non_uniform_vote cl_khr_subgroup_ballot cl_khr_subgroup_non_uniform_arithmetic cl_khr_subgroup_shuffle cl_khr_subgroup_shuffle_relative cl_khr_subgroup_clustered_reduce cl_intel_device_attribute_query cl_khr_extended_bit_ops cl_khr_suggested_local_work_size cl_intel_split_work_group_barrier cl_intel_spirv_media_block_io cl_intel_spirv_subgroups cl_khr_spirv_linkonce_odr cl_khr_spirv_no_integer_wrap_decoration cl_intel_unified_shared_memory cl_khr_mipmap_image cl_khr_mipmap_image_writes cl_ext_float_atomics cl_khr_external_memory cl_intel_planar_yuv cl_intel_packed_yuv cl_khr_int64_base_atomics cl_khr_int64_extended_atomics cl_khr_image2d_from_buffer cl_khr_depth_images cl_khr_3d_image_writes cl_intel_media_block_io cl_intel_subgroup_local_block_io cl_khr_integer_dot_product cl_khr_gl_sharing cl_khr_gl_depth_images cl_khr_gl_event cl_khr_gl_msaa_sharing cl_intel_dx9_media_sharing cl_khr_dx9_media_sharing cl_khr_d3d10_sharing cl_khr_d3d11_sharing cl_intel_d3d11_nv12_media_sharing cl_intel_sharing_format_query cl_khr_pci_bus_info cl_intel_simultaneous_sharing
+OpenCL evaluator choosing OpenCL platform NVIDIA Corporation.
+OpenCL evaluator is unable to find a GPU device that can share VBOs with OpenGL.
+00:00:02   856MB         | log started Wed Jun 18 17:17:07 2025
+00:00:02   856MB         | Arnold 7.1.1.0 [eba1345a] windows clang-10.0.1 oiio-2.4.0 osl-1.12.0 vdb-7.1.1 adlsdk-6.3.1.44 clmhub-2.0.0.235 rlm-14.1.3 optix-6.6.0 2022/03/28 17:43:48
+00:00:02   856MB         | running on LSKLAST-071, pid=42700
+00:00:02   856MB         |  1 x 12th Gen Intel(R) Core(TM) i7-12700 (20 cores, 20 logical) with 65224MB
+00:00:02   856MB         |  NVIDIA driver version 576.52 (Optix 60809)
+00:00:02   856MB         |  GPU 0: NVIDIA GeForce RTX 3060 @ 1777MHz (compute 8.6) with 12287MB (9898MB available) (NVLink:0)
+00:00:02   856MB         |  Windows 10 (version 10.0, build 19045)
+00:00:02   856MB         |  soft limit for open files changed from 512 to 2048
+00:00:02   856MB         |
+00:00:02   856MB         | [color_manager_ocio] default ocio.config found in C:\Tools\maya\2022\modules\mtoadeploy5.1.1.0\2022\bin\../ocio/configs/arnold/config.ocio
+00:00:02   856MB         | loading plugins from C:/Users/LS0758/AppData/Local/ov/pkg/maya-connector-200.4.0/maya2022_mdl_arnold/lib ...
+00:00:02   857MB         |  mdl_arnold.dll: mdl uses Arnold 7.1.1.0
+00:00:02   857MB         | loading plugins from C:/Tools/maya/2022/modules/mtoadeploy5.1.1.0/2022/shaders ...
+00:00:02   857MB         |  hairPhysicalShader_shaders.dll: HairPhysicalShaderDiffuseColorAdapter uses Arnold 7.1.1.0
+00:00:02   857MB         |  hairPhysicalShader_shaders.dll: HairPhysicalShaderSpecularWeightAdapter uses Arnold 7.1.1.0
+00:00:02   857MB         |  hairPhysicalShader_shaders.dll: HairPhysicalShaderSpecularGlossAdapter uses Arnold 7.1.1.0
+00:00:02   857MB         |  hairPhysicalShader_shaders.dll: HairPhysicalShaderTransmissionWeightAdapter uses Arnold 7.1.1.0
+00:00:02   857MB         |  hairPhysicalShader_shaders.dll: HairPhysicalShaderTransmissionSpreadAdapter uses Arnold 7.1.1.0
+00:00:02   857MB         |  lookdevkit_shaders.dll: ldkFloatConstant uses Arnold 7.1.1.0
+00:00:02   857MB         |  lookdevkit_shaders.dll: ldkFloatComposite uses Arnold 7.1.1.0
+00:00:02   857MB         |  lookdevkit_shaders.dll: ldkFloatCondition uses Arnold 7.1.1.0
+00:00:02   857MB         |  lookdevkit_shaders.dll: ldkFloatCorrect uses Arnold 7.1.1.0
+00:00:02   857MB         |  lookdevkit_shaders.dll: ldkFloatLogic uses Arnold 7.1.1.0
+00:00:02   857MB         |  lookdevkit_shaders.dll: ldkFloatMask uses Arnold 7.1.1.0
+00:00:02   857MB         |  lookdevkit_shaders.dll: ldkFloatMath uses Arnold 7.1.1.0
+00:00:02   857MB         |  lookdevkit_shaders.dll: ldkColorComposite uses Arnold 7.1.1.0
+00:00:02   857MB         |  lookdevkit_shaders.dll: ldkColorCondition uses Arnold 7.1.1.0
+00:00:02   857MB         |  lookdevkit_shaders.dll: ldkColorConstant uses Arnold 7.1.1.0
+00:00:02   857MB         |  lookdevkit_shaders.dll: ldkColorCorrect uses Arnold 7.1.1.0
+00:00:02   857MB         |  lookdevkit_shaders.dll: ldkColorLogic uses Arnold 7.1.1.0
+00:00:02   857MB         |  lookdevkit_shaders.dll: ldkColorMask uses Arnold 7.1.1.0
+00:00:02   857MB         |  lookdevkit_shaders.dll: ldkColorMath uses Arnold 7.1.1.0
+00:00:02   857MB         |  lookdevkit_shaders.dll: ldkChannels uses Arnold 7.1.1.0
+00:00:02   857MB         |  lookdevkit_shaders.dll: ldkPremultiply uses Arnold 7.1.1.0
+00:00:02   857MB         |  lookdevkit_shaders.dll: ldkSimplexNoise uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaMultiplyDivide uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaClamp uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaGammaCorrect uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaCondition uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaReverse uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaBlendColors uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaSamplerInfo1D uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaSamplerInfo2D uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaPlusMinusAverage1D uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaPlusMinusAverage2D uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaPlusMinusAverage3D uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaRemapValueToValue uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaRemapValueToColor uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaRemapColor uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaFile uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaPlace2DTexture uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaRamp uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaProjection uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaChecker uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaBulge uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaCloth uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaGrid uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaFractal uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaNoise uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaPlace3DTexture uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaRgbToHsv uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaHsvToRgb uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaLuminance uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaCloud uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaCloudAlpha uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaSnow uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaContrast uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaLayeredTexture uses Arnold 7.1.1.0
+00:00:02   857MB         |  mtoa_shaders.dll: MayaSolidFractal uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaVolumeNoise uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaBrownian uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaStucco uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaRemapHsv uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaSetRange uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaImagePlane uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaSurfaceShader uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MtoaColorToFloat uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MtoaVectorToFloat uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MtoaPointToFloat uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MtoaPoint2ToFloat uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MtoaWriteColor uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MtoaAovWriteColor uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MtoaWriteFloat uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MtoaAovWriteFloat uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaEnvSphere uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MtoaAnimFloat uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MtoaAnimPoint uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MtoaAnimVector uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MtoaAnimColor uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MtoaAnimMatrix uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MtoaUserDataVector uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MtoaUserDataColor uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaShadingEngine uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaSamplerInfo3D uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MtoaAovWriteVector uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MtoaAovWriteVector2 uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaNormalDisplacement uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaVectorDisplacement uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MtoaUserDataBool uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaHair uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MtoaMeshLightMaterial uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MtoaUserDataVec2 uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaBump2D uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaFluid uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaMarble uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaMountain uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaWater uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaCrater uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaLeather uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaGranite uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaRock uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaSingleShadingSwitch uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaDoubleShadingSwitch uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaTripleShadingSwitch uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaQuadShadingSwitch uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaFluidData uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaFluidTexture2D uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaSurfaceLuminance uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MtoaCameraUvMapper uses Arnold 7.1.1.0
+00:00:02   858MB         |  mtoa_shaders.dll: MayaFlatClosure uses Arnold 7.1.1.0
+00:00:02   858MB         |  [metadata] loading metadata file: C:/Tools/maya/2022/modules/mtoadeploy5.1.1.0/2022/shaders\mtoa_shaders.mtd
+00:00:02   858MB         |  renderSetup_shaders.dll: applyAbsFloatOverride uses Arnold 7.1.1.0
+00:00:02   858MB         |  renderSetup_shaders.dll: applyAbs2FloatsOverride uses Arnold 7.1.1.0
+00:00:02   858MB         |  renderSetup_shaders.dll: applyAbs3FloatsOverride uses Arnold 7.1.1.0
+00:00:02   858MB         |  renderSetup_shaders.dll: applyAbsIntOverride uses Arnold 7.1.1.0
+00:00:02   858MB         |  renderSetup_shaders.dll: applyRelFloatOverride uses Arnold 7.1.1.0
+00:00:02   858MB         |  renderSetup_shaders.dll: applyRel2FloatsOverride uses Arnold 7.1.1.0
+00:00:02   858MB         |  renderSetup_shaders.dll: applyRel3FloatsOverride uses Arnold 7.1.1.0
+00:00:02   858MB         |  renderSetup_shaders.dll: applyRelIntOverride uses Arnold 7.1.1.0
+00:00:02   858MB         |  xgenSpline_shaders.dll: XGenHairMapping uses Arnold 7.1.1.0
+00:00:02   858MB         | loading plugins from C:/Tools/maya/2022/modules/mtoadeploy5.1.1.0/2022/procedurals ...
+00:00:02   859MB         |  mtoa_ParticleInstancer_proc.dll: particleInstancer uses Arnold 7.1.1.0
+00:00:02   859MB         |  mtoa_ParticleVolume_proc.dll: volume_particle uses Arnold 7.1.1.0
+00:00:02   859MB         |  mtoa_ParticleVolume_proc.dll: implicit_particle uses Arnold 7.1.1.0
+00:00:02   859MB         |  xgenSpline_procedural.dll: xgenProcedural uses Arnold 7.1.1.0
+00:00:02   859MB         |  xgen_procedural.dll: xgen_procedural uses Arnold 7.1.1.0
+00:00:02   859MB         | loaded 122 plugins from 10 lib(s) in 0:00.17
+00:00:02   859MB         | loading plugins from C:\Tools\maya\2022\modules\mtoadeploy5.1.1.0\2022\bin\..\plugins ...
+00:00:02   859MB         |  alembic_proc.dll: alembic uses Arnold 7.1.1.0
+00:00:02   859MB         |  cryptomatte.dll: cryptomatte uses Arnold 7.1.1.0
+00:00:02   859MB         |  cryptomatte.dll: cryptomatte_filter uses Arnold 7.1.1.0
+00:00:02   859MB         |  cryptomatte.dll: cryptomatte_manifest_driver uses Arnold 7.1.1.0
+00:00:02   860MB         |  synColor_shaders.dll: color_manager_syncolor uses Arnold 7.1.1.0
+00:00:02   879MB         |  usd_proc.dll: usd uses Arnold 7.1.1.0
+00:00:02   879MB         | loaded 6 plugins from 4 lib(s) in 0:00.09
+###############################################################################
+Begin attempted read of a shade fragment XML file.
+Attempting to read fragment XML code from: aiRectangleAreaLight.xml
+Errors loading XML:
+-------------------------------------------------------------------------------
+Could not find file: aiRectangleAreaLight.xml
+-------------------------------------------------------------------------------
+End attempted read of fragment XML.
+###############################################################################
+qt.svg: Cannot open file ':/expression.svg', because: No such file or directory
+qt.svg: Cannot open file ':/expression.svg', because: No such file or directory
+C:\Users\LS0758\AppData\Local\ov\pkg\maya-connector-200.4.0\lib37\libmdl_sdk.dll
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: Error occurred during execution of MEL script
+# file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+# Traceback (most recent call last):
+#   File "N:\pipeline\Tools\Maya\packages\Agora_community_tools\v2\Agora_community_tools\scripts\agora_community\setup.py", line 19, in main
+#     load_main_shelf(activate=first_run)
+#   File "N:\pipeline\Tools\Maya\packages\Agora_community_tools\v2\Agora_community_tools\scripts\agora_community\setup.py", line 166, in load_main_shelf
+#     mel.eval(f'loadNewShelf "{SHELF_PATH}";'.replace('\\', '/'))
+# RuntimeError: Error occurred during execution of MEL script
+# file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Running submission script "//sun/Amin-Share/DeadlineRepository10.4/submission/Maya/Main/SubmitMayaToDeadline.mel"
+Warning: file: C:\Users\LS0758\Documents\maya\scripts\userSetup.mel line 5: Plug-in, "MayaScanner.py", is already loaded.  Skipped.
+Warning: file: C:\Users\LS0758\Documents\maya\scripts\userSetup.mel line 6: Plug-in, "MayaScannerCB.py", is already loaded.  Skipped.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+Error: file: C:/Program Files/Autodesk/Maya2022/scripts/others/loadNewShelf.mel line 94: setParent: Object '' not found.
+loading lsCallbacks...
+cutCopyPaste Fix is applied.
+Error: file: C:\Users\LS0758\Documents\maya\scripts\userSetup.mel line 131: setParent: Object '' not found.
+Error: file: C:\ProgramData\Autodesk\ApplicationPlugins\MayaBonusTools-2020-2024\Contents\scripts-2022\userSetup.mel line 27: No module path found
+InitParameters()
+InitParameters()
+Error: line 1: Plug-in, "2012_x64_embeddedRig_Todd", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "2012_x64_embeddedRig_Todd", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "2012_x64_embeddedRig_3LSample_Voja", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "2012_x64_embeddedRig_3LSample_Voja", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "TurtleForMaya85", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "TurtleForMaya85", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "COLLADA", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "COLLADA", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "TurtleForMaya2009", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "TurtleForMaya2009", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "2015_x64_embeddedRig_3LSample_Voja", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "2015_x64_embeddedRig_3LSample_Voja", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "2015_x64_embeddedRig_Kenneth", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "2015_x64_embeddedRig_Kenneth", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "2016_x64_markerLocator", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "2016_x64_markerLocator", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "ABCamera", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "ABCamera", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "CausticVisualizerSettingsNode.py", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "CausticVisualizerSettingsNode.py", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "CorePlugin", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "CorePlugin", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "TurtleForMaya2010", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "TurtleForMaya2010", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "DModelingTool_2012_x64", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "DModelingTool_2012_x64", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "wmInfo", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "wmInfo", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "cgfxshader", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "cgfxshader", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "DModelingTool_2013_x64", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "DModelingTool_2013_x64", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "MayaNodes", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "MayaNodes", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "GeoMaya", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "GeoMaya", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "recast", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "recast", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "IKinema", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "IKinema", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "MayaNova", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "MayaNova", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "ndiPoseReader", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "ndiPoseReader", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "skeletonDefinition.py", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "skeletonDefinition.py", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "RenderMan_for_Maya", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "RenderMan_for_Maya", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "RoadkillPro2013_5_x64", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "RoadkillPro2013_5_x64", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "exportInfoNode", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "exportInfoNode", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "TitanDDS", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "TitanDDS", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "depthOfFieldView", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "depthOfFieldView", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "TurtleForMaya70", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "TurtleForMaya70", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "attributeNode.py", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "attributeNode.py", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "mArny_maya50", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "mArny_maya50", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "elastikSolver", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "elastikSolver", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "cvShapeInverter.py", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "cvShapeInverter.py", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "hctMayaSceneExport", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "hctMayaSceneExport", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "vstUtils", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "vstUtils", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "mayaUtilPlugin", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "mayaUtilPlugin", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "pradmayacommands", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "pradmayacommands", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "pradmayaviewer", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "pradmayaviewer", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "rad_nodes", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "rad_nodes", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "spCmptAsmbNd", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "spCmptAsmbNd", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "spMapInfoShader", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "spMapInfoShader", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "spRotoNode", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "spRotoNode", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "sphereIntersector", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "sphereIntersector", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "surfershader", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "surfershader", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "vrayformaya", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "vrayformaya", was not found on MAYA_PLUG_IN_PATH.
+Error: line 1: Plug-in, "xfrog", was not found on MAYA_PLUG_IN_PATH.
+# Traceback (most recent call last):
+#   File "<maya console>", line 1, in <module>
+# RuntimeError: Plug-in, "xfrog", was not found on MAYA_PLUG_IN_PATH.
+Warning: line 1: Unrecognized node type for node 'DRG_00_rig:hyperShadePrimaryNodeEditorSavedTabsInfo'; preserving node information during this session.
+Error: You are attempting to load a file that contains legacy render layers into a scene that uses render setup. This combination is unsupported and may result in unexpected behavior.
+Warning: file: N:/pipeline/Tools/Maya/scripts/anim/AnimRenderTool/maya_preset/BasicLight/BasicLight.ma line 1488: Unrecognized node type 'nodeGraphEditorInfo'; preserving node information during this session.
+Warning: file: N:/pipeline/Tools/Maya/scripts/anim/AnimRenderTool/maya_preset/BasicLight/BasicLight.ma line 2071: ':defaultArnoldDisplayDriver.message' is already connected to ':defaultArnoldRenderOptions.drivers'.
+Autodesk.MayaScanner : INFO : checking issues in file: L:/Temp/Shaun/ForRusydi/DRG_FE_Action_Intro_LIT.mb
+Autodesk.MayaScanner : INFO : scriptjob not found
+Warning: line 1: Errors have occurred while reading this scene that may result in data loss.
+Read 2 files in  16.6 seconds.
+nvOmniRefreshObjectSets()
+Autodesk.MayaScanner : INFO : scriptjob not found
+Result: L:/Temp/Shaun/ForRusydi/DRG_FE_Action_Intro_LIT.mb
+Warning: Plug-in, "mtoa.mll", is already loaded.  Skipped.
+Exporting Arnold Scene...
+Exporting Motion Data...
+Updating Arnold Scene...
+[mtoa] Rendering Frame: 0 (1/1)  Camera: LIT:LIT_RENDER_CAMShape  Layer: masterLayer
+        L:/Temp/Shaun/ForRusydi/DRG_FE_Action_Intro_LIT_render/DRG_FE_Action_Intro_LIT.0000.png
+00:00:39  1497MB WARNING |  [polymesh] /LIT:LIT_PRESET/LIT:LIT_CTR/LIT:__LIT__/LIT:LIT_backdrop/LIT:LIT_backdropShape: discarded 1 duplicate deformation keys

@@ -1,0 +1,7 @@
+ffmpeg.exe
+_backups
+.venv
+__pycache__/
+*.pyc
+build/
+dist/
