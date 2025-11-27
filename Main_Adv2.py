@@ -238,7 +238,7 @@ class MainWindow(QtWidgets.QMainWindow):
         
     
     def open_help_document(self):
-        help_path = os.path.join(SCRIPT_FILE_PATH, 'help_doc.pdf')  # modify as needed
+        help_path = os.path.join(SCRIPT_FILE_PATH, 'doc', 'help_doc.pdf')  # modify as needed
         url = QtCore.QUrl.fromLocalFile(help_path)
         QtGui.QDesktopServices.openUrl(url)
 
